@@ -76,12 +76,6 @@ function handleSubmit(e)
     console.log("here submit")
     
     toggle(false)
-    // fetch("http://localhost:3000/api/cars/7",{
-    //     method: "PUT",
-    //     data: JSON.stringify({brand: "Tesla"})
-    // })
-    // .then(res => res.json())
-    // .then(data => console.log(data))
 }
 
 function del(id)
@@ -137,3 +131,11 @@ function toggle(bool)
     document.querySelector("form").style.display = 
                         bool  ?  "block" : "none"
 }
+
+
+    // fetch("http://localhost:3000/api/cars/7",{
+    //     method: "PUT",
+    //     data: JSON.stringify({brand: "Tesla"})
+    // })
+    // .then(res => res.json())
+    // .then(data => console.log(data))
