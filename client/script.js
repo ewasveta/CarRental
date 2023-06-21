@@ -48,13 +48,14 @@ function handleSubmit(e)
 
     const data = {brand, model, photo, edition, rent}
 
-    //("http://localhost:3000/api/cars",
     fetch("https://ewasveta.github.io/CarRental/cars.json",
     {
         method: "POST",
-        headers: {
-            //"Content-Type": "application/json",
-            'Content-Type': 'application/x-www-form-urlencoded',
+        headers: 
+        {
+            'Accept': 'application/json',
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: JSON.stringify(data)
     })
@@ -86,9 +87,11 @@ function del(id)
     fetch("https://ewasveta.github.io/CarRental/cars.json"+id,
     {
         method: "DELETE",
-        headers: {
-            //"Content-Type": "application/json",
-            'Content-Type': 'application/x-www-form-urlencoded',
+        headers: 
+        {
+            'Accept': 'application/json',
+            "Content-Type": "application/json",
+            //'Content-Type': 'application/x-www-form-urlencoded',
         }
     })
     .then(res => res.json())
