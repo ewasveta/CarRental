@@ -50,7 +50,7 @@ function handleSubmit(e)
 
     const data = {brand, model, photo, edition, rent}
 
-    fetch("http://localhost:3000/api/cars",
+    fetch("https://ewasveta.github.io/CarRental/cars.json",//("http://localhost:3000/api/cars",
     {
         method: "POST",
         headers: {
@@ -89,7 +89,7 @@ function handleSubmit(e)
 function del(id)
 {
     console.log("deleting...")
-    fetch("http://localhost:3000/api/cars/" + id,
+    fetch("https://ewasveta.github.io/CarRental/cars.json"+id,//"http://localhost:3000/api/cars/" + id,
     {
         method: "DELETE",
         headers: {

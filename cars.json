@@ -1,1 +1,42 @@
-[{"id":3,"brand":"Volvo","model":"C40","photo":"http://localhost:3000/Images/volvo1.jpg","edition":"2018","rent":"550"},{"id":4,"brand":"Honda","model":"Civic","photo":"./Images/honda1.jpg","edition":"2021","rent":"680"},{"id":4,"brand":"BMW","model":"TOURING","photo":"http://localhost:3000/Images/bmw1.jpg","edition":"2019","rent":"650"},{"id":6,"brand":"Audi","model":"A5","photo":"./Images/audi1.jpg","edition":"2019","rent":"2019"},{"id":6,"brand":"Kia","model":"Rio","photo":"http://localhost:3000/Images/kia1.jpg","edition":"2012","rent":"501"}]
+[
+    {
+        "id": 3,
+        "brand": "Volvo",
+        "model": "C40",
+        "photo": "./Images/volvo1.jpg",
+        "edition": "2018",
+        "rent": "550"
+    },
+    {
+        "id": 4,
+        "brand": "Honda",
+        "model": "Civic",
+        "photo": "./Images/honda1.jpg",
+        "edition": "2021",
+        "rent": "680"
+    },
+    {
+        "id": 4,
+        "brand": "BMW",
+        "model": "TOURING",
+        "photo": "./Images/bmw1.jpg",
+        "edition": "2019",
+        "rent": "650"
+    },
+    {
+        "id": 6,
+        "brand": "Audi",
+        "model": "A5",
+        "photo": "./Images/audi1.jpg",
+        "edition": "2019",
+        "rent": "2019"
+    },
+    {
+        "id": 6,
+        "brand": "Kia",
+        "model": "Rio",
+        "photo": "./Images/kia1.jpg",
+        "edition": "2012",
+        "rent": "501"
+    }
+]
