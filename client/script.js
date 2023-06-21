@@ -53,8 +53,8 @@ function handleSubmit(e)
     {
         method: "POST",
         headers: {
-            "Content-Type": "application/json",
-            // 'Content-Type': 'application/x-www-form-urlencoded',
+            //"Content-Type": "application/json",
+            'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: JSON.stringify(data)
     })
@@ -87,8 +87,8 @@ function del(id)
     {
         method: "DELETE",
         headers: {
-            "Content-Type": "application/json",
-            //'Content-Type': 'application/x-www-form-urlencoded',
+            //"Content-Type": "application/json",
+            'Content-Type': 'application/x-www-form-urlencoded',
         }
     })
     .then(res => res.json())
