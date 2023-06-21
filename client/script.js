@@ -9,7 +9,7 @@
 const carsCards = document.querySelector("#crds")
 
 function showCars(){
-    fetch("http://localhost:3000/api/cars")
+    fetch("https://ewasveta.github.io/CarRental/cars.json")//("http://localhost:3000/api/cars")
     .then(res => res.json())
     .then(data => {
 
