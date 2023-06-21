@@ -1,15 +1,13 @@
-// Client Side!!!
+
 // [{"id":1,"brand":"BMW"},{"id":2,"brand":"Audi"},{"id":3,"brand":"Tesla"},{"id":4,"brand":"Toyota"},{"id":5,"brand":"Skoda"},{"id":7,"brand":"Volvo"},{"id":8,"brand":"Lamborghini"},{"id":9,"brand":"Renault"},{"id":9,"brand":"Peugeot"},{"id":10,"brand":"Honda"}]
 //Reventón
 
-// console.log("From the frontend")
-// alert("From the frontend")
-
-//const carsList = document.querySelector("ul#cars-list")
 const carsCards = document.querySelector("#crds")
 
-function showCars(){
-    fetch("https://ewasveta.github.io/CarRental/cars.json")//("http://localhost:3000/api/cars")
+function showCars()
+{
+    //("http://localhost:3000/api/cars")
+    fetch("https://ewasveta.github.io/CarRental/cars.json")
     .then(res => res.json())
     .then(data => {
 
@@ -88,8 +86,9 @@ function handleSubmit(e)
 
 function del(id)
 {
+    //"http://localhost:3000/api/cars/" + id,
     console.log("deleting...")
-    fetch("https://ewasveta.github.io/CarRental/cars.json"+id,//"http://localhost:3000/api/cars/" + id,
+    fetch("https://ewasveta.github.io/CarRental/cars.json"+id,
     {
         method: "DELETE",
         headers: {
