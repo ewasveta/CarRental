@@ -48,7 +48,8 @@ function handleSubmit(e)
 
     const data = {brand, model, photo, edition, rent}
 
-    fetch("https://ewasveta.github.io/CarRental/cars.json",//("http://localhost:3000/api/cars",
+    //("http://localhost:3000/api/cars",
+    fetch("https://ewasveta.github.io/CarRental/cars.json",
     {
         method: "POST",
         headers: {
