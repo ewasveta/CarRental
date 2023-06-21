@@ -55,10 +55,10 @@ function handleSubmit(e)
         method: "POST",
         headers: 
         {
-            // 'Accept': 'application/json',
-            // "Content-Type": "application/json",
-            "Content-Type": "text/plain",
-            // 'Content-Type': 'application/x-www-form-urlencoded',
+            'Accept': 'application/json',
+            "Content-Type": "application/json",
+            //"Content-Type": "text/plain",
+            //'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: JSON.stringify(data)
     })
@@ -92,9 +92,9 @@ function del(id)
         method: "DELETE",
         headers: 
         {
-            //'Accept': 'application/json',
-            "Content-Type": "text/plain"
-            //"Content-Type": "application/json",
+            'Accept': 'application/json',
+            "Content-Type": "application/json",
+            //"Content-Type": "text/plain"
             //'Content-Type': 'application/x-www-form-urlencoded',
         }
     })
