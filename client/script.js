@@ -6,8 +6,9 @@ const carsCards = document.querySelector("#crds")
 
 function showCars()
 {
-    //("http://localhost:3000/api/cars")
     fetch("https://ewasveta.github.io/CarRental/cars.json")
+    //fetch ("http://localhost:3000/api/cars")
+    
     .then(res => res.json())
     .then(data => {
 
@@ -49,12 +50,14 @@ function handleSubmit(e)
     const data = {brand, model, photo, edition, rent}
 
     fetch("https://ewasveta.github.io/CarRental/cars.json",
+    //fetch ("http://localhost:3000/api/cars",
     {
         method: "POST",
         headers: 
         {
-            'Accept': 'application/json',
-            "Content-Type": "application/json",
+            // 'Accept': 'application/json',
+            // "Content-Type": "application/json",
+            "Content-Type": "text/plain",
             // 'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: JSON.stringify(data)
@@ -81,16 +84,17 @@ function handleSubmit(e)
 }
 
 function del(id)
-{
-    //"http://localhost:3000/api/cars/" + id,
+{    
     console.log("deleting...")
     fetch("https://ewasveta.github.io/CarRental/cars.json"+id,
+    //fetch ("http://localhost:3000/api/cars/" + id,
     {
         method: "DELETE",
         headers: 
         {
-            'Accept': 'application/json',
-            "Content-Type": "application/json",
+            //'Accept': 'application/json',
+            "Content-Type": "text/plain"
+            //"Content-Type": "application/json",
             //'Content-Type': 'application/x-www-form-urlencoded',
         }
     })
