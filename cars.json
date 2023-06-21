@@ -16,7 +16,7 @@
         "rent": "680"
     },
     {
-        "id": 4,
+        "id": 1,
         "brand": "BMW",
         "model": "TOURING",
         "photo": "./Images/bmw1.jpg",
@@ -24,7 +24,7 @@
         "rent": "650"
     },
     {
-        "id": 6,
+        "id": 2,
         "brand": "Audi",
         "model": "A5",
         "photo": "./Images/audi1.jpg",
@@ -32,7 +32,7 @@
         "rent": "2019"
     },
     {
-        "id": 6,
+        "id": 5,
         "brand": "Kia",
         "model": "Rio",
         "photo": "./Images/kia1.jpg",
