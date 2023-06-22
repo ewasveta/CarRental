@@ -3,8 +3,8 @@ const carsCards = document.querySelector("#crds")
 
 function showCars()
 {
-    //fetch("https://ewasveta.github.io/CarRental/cars.json")
-    fetch ("http://localhost:3000/api/cars")
+    fetch("https://ewasveta.github.io/CarRental/cars.json")
+    //fetch ("http://localhost:3000/api/cars")
     
     .then(res => res.json())
     .then(data => {
@@ -16,7 +16,7 @@ function showCars()
         
         data.forEach(car => {
             carsCards.innerHTML += `
-            <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="col-sm-6 mb-3">
             <div class="card">
               <img id="i${car.id}" class="card-img-top" src="${car.photo}" alt="${car.brand} image">
               <div class="card-body">
@@ -46,8 +46,8 @@ function handleSubmit(e)
 
     const data = {brand, model, photo, edition, rent}
 
-    //fetch("https://ewasveta.github.io/CarRental/cars.json",
-    fetch ("http://localhost:3000/api/cars",
+    fetch("https://ewasveta.github.io/CarRental/cars.json",
+    //fetch ("http://localhost:3000/api/cars",
     {
         method: "POST",
         headers: 
@@ -83,8 +83,8 @@ function handleSubmit(e)
 function del(id)
 {    
     console.log("deleting...")
-    //fetch("https://ewasveta.github.io/CarRental/cars.json"+id,
-    fetch ("http://localhost:3000/api/cars/" + id,
+    fetch("https://ewasveta.github.io/CarRental/cars.json"+id,
+    //fetch ("http://localhost:3000/api/cars/" + id,
     {
         method: "DELETE",
         headers: 
