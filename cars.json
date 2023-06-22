@@ -1,1 +1,34 @@
-[{"id":1,"brand":"BMW","model":"TOURING","photo":"http://localhost:3000/Images/bmw1.jpg","edition":"2019","rent":"660"},{"id":2,"brand":"Skoda","model":"Octavia","photo":"./Images/skoda1.jpg","edition":"2016","rent":"590"},{"id":3,"brand":"Toyota","model":"Corola","photo":"http://localhost:3000/Images/toyota1.jpg","edition":"2022","rent":"690"},{"id":4,"brand":"Honda","model":"Civic","photo":"./Images/honda1.jpg","edition":"2018","rent":"700"}]
+[
+    {
+        "id": 1,
+        "brand": "BMW",
+        "model": "TOURING",
+        "photo": "./Images/bmw1.jpg",
+        "edition": "2019",
+        "rent": "660"
+    },
+    {
+        "id": 2,
+        "brand": "Skoda",
+        "model": "Octavia",
+        "photo": "./Images/skoda1.jpg",
+        "edition": "2016",
+        "rent": "590"
+    },
+    {
+        "id": 3,
+        "brand": "Toyota",
+        "model": "Corola",
+        "photo": "./Images/toyota1.jpg",
+        "edition": "2022",
+        "rent": "690"
+    },
+    {
+        "id": 4,
+        "brand": "Honda",
+        "model": "Civic",
+        "photo": "./Images/honda1.jpg",
+        "edition": "2018",
+        "rent": "700"
+    }
+]
