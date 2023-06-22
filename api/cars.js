@@ -10,8 +10,8 @@ let { body, validationResult } = require('express-validator')
 // local middleware
 router.get('/cars', (req, res) => 
 {
-    fs.readFile('./cars.json', (err, data) => {
-
+    fs.readFile('./cars.json', (err, data) => 
+    {
         cars = JSON.parse(data)
 
         res.json(cars)
@@ -37,17 +37,22 @@ router.post('/cars', body('brand').notEmpty(), body('model').notEmpty(),
 {
     const result = validationResult(req);
 
-    if (result.isEmpty()) {
+    if (result.isEmpty()) 
+    {
+        //Sparse id ordering:
+        for(let i in cars)
+        {
+            cars[i].id = +i+1
+        }      
+                
         const id = cars.length + 1
-        const car = { id, ...req.body }
 
-        console.log(req.body)
+        const car = { id, ...req.body }
 
         cars.push(car)
 
         fs.writeFile('./cars.json', JSON.stringify(cars), (err) => 
         {
-
             if (err)
                 return res.status(400).json({ message: "Could not create a car" })
 
@@ -67,20 +72,19 @@ router.put('/cars/:id', (req, res) =>
 {
     const carId = req.params.id
     const newDataForCar = { ...req.body }
-    console.log(cars)
-
+    
     let car = cars.find(car => car.id === +carId)
 
     const { id, ...other } = car
 
-    console.log(other)
+    //console.log(other)
 
     if (req.body.brand !== "" && req.body.brand !== undefined && typeof req.body.brand === "String") {
         // update the json
         console.log("update = put")
     }
 
-    console.log({ id, newDataForCar })
+    //console.log({ id, newDataForCar })
 
     res.json({ message: "Sababa" })
 

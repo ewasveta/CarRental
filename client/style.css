@@ -5,7 +5,7 @@ body
 #dh1
 {
     height: 26rem;
-    line-height: 35rem;
+    line-height: 35.1rem;
     text-align: center;
     color: white;
     background-image: url(./Images/oT3DY.png);
@@ -28,6 +28,9 @@ img
 {   
     height: 20rem; 
     width: auto;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @keyframes drive 
